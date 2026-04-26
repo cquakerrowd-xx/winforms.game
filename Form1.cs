@@ -23,5 +23,10 @@ namespace game
             Help_Zcreen helpWindow = new Help_Zcreen();
             helpWindow.Show();
         }
+
+        private void exit(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

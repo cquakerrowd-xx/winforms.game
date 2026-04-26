@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             StartButton = new Button();
-            HelpButton = new Button();
+            exitButton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -61,16 +61,16 @@
             StartButton.UseVisualStyleBackColor = true;
             StartButton.Click += LoadGame;
             // 
-            // HelpButton
+            // exitButton
             // 
-            HelpButton.Font = new Font("Arial Rounded MT Bold", 20.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
-            HelpButton.Location = new Point(439, 184);
-            HelpButton.Name = "HelpButton";
-            HelpButton.Size = new Size(170, 57);
-            HelpButton.TabIndex = 2;
-            HelpButton.Text = "HELP";
-            HelpButton.UseVisualStyleBackColor = true;
-            HelpButton.Click += LoadHelp;
+            exitButton.Font = new Font("Arial Rounded MT Bold", 20.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            exitButton.Location = new Point(439, 184);
+            exitButton.Name = "exitButton";
+            exitButton.Size = new Size(170, 57);
+            exitButton.TabIndex = 2;
+            exitButton.Text = "EXIT";
+            exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exit;
             // 
             // Form1
             // 
@@ -78,7 +78,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
-            Controls.Add(HelpButton);
+            Controls.Add(exitButton);
             Controls.Add(StartButton);
             Controls.Add(label1);
             Name = "Form1";
@@ -91,6 +91,6 @@
 
         private Label label1;
         private Button StartButton;
-        private Button HelpButton;
+        private Button exitButton;
     }
 }
