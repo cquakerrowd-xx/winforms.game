@@ -40,10 +40,5 @@ namespace game
         {
             return new string(text.ToCharArray().OrderBy(x => Guid.NewGuid()).ToArray());
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

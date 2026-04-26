@@ -37,7 +37,9 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -99,7 +101,7 @@
             button1.Name = "button1";
             button1.Size = new Size(267, 76);
             button1.TabIndex = 5;
-            button1.Text = "A";
+            button1.Text = "Drag Choice A";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -108,9 +110,8 @@
             button2.Name = "button2";
             button2.Size = new Size(267, 76);
             button2.TabIndex = 6;
-            button2.Text = "button2";
+            button2.Text = "Drag Choice B";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -118,8 +119,16 @@
             button3.Name = "button3";
             button3.Size = new Size(267, 76);
             button3.TabIndex = 7;
-            button3.Text = "button3";
+            button3.Text = "Drag Choice C";
             button3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new Point(256, 250);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(223, 82);
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
             // 
             // GameScreen
             // 
@@ -127,6 +136,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox2);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -138,6 +148,7 @@
             Name = "GameScreen";
             Text = "GameScreen";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -152,5 +163,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private PictureBox pictureBox2;
     }
 }
